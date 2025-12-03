@@ -1,0 +1,17 @@
+#!/bin/bash
+
+datetime_now=$(date "+%Y-%m-%d %H:%M")
+
+git config --global user.name "gringo-aza"
+git config --global user.email "gringo97@gmail.com"
+
+git add .
+
+git commit -m "$datetime_now"
+
+git branch -M main
+
+
+git remote add origin https://github.com/gringo-aza/py-repo.git
+
+git push -u origin main
